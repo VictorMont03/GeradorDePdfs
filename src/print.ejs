@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório</title>
+    <title>Relatório Empresa Área</title>
 
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 
@@ -16,16 +16,22 @@
         th {
             text-align: left;
         }
+        h1{
+            text-align: center;
+        }
+        .total{
+            padding-top:10px;
+        }
     </style>
 </head>
 <body class="bg-purple-100">
     <div class="m-8">           
-        <h1 class="text-3xl mb-8">Listagem de passageiros</h1>
+        <h1 class="text-3xl mb-8">Lista de passageiros</h1>
         <table>
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Número do voo</th>
+                    <th>Número do voô</th>
                     <th>Horário</th>
                 </tr>
             </thead>
@@ -41,7 +47,7 @@
             <% } %>
             </tbody>
             <tfoot>
-                <tr><td colspan="2"><%=passengers.length%> passageiros</td></tr>
+                <tr><td class="total" colspan="2">Número de passageiros cadastrados: <%=passengers.length%> passageiros</td></tr>
             </tfoot>
         </table>
     </div>
